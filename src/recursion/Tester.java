@@ -3,9 +3,11 @@ package recursion;
 public class Tester {
 
 	public static void main(String[] args) {
-		helloWorld();
-		
-		factorial();
+//		helloWorld();
+//		
+//		factorial();
+//		
+		fibonacciSeries();
 	}
 	
 	static void helloWorld() {
@@ -25,5 +27,12 @@ public class Tester {
 		
 		// Use BigIntegers for calculating factorial for bigger numbers like 100 or so
 		
+	}
+	
+	static void fibonacciSeries() {
+		//		a[n] = a[n-1] + a[n-2];
+		FibonacciSeries fb = new FibonacciSeries();
+		int numb = fb.fibonacciSeries(10);
+		System.out.println("10th Fibonacci Number is : " +numb);
 	}
 }
