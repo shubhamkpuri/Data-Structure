@@ -4,13 +4,15 @@ public class Tester {
 
 	public static void main(String[] args) {
 		
-		twoSum();
+//		twoSum();
+//		
+//		containerWtihWater();
+//		
+//		threeSum();
+//		
+//		fourSum();
 		
-		containerWtihWater();
-		
-		threeSum();
-		
-		fourSum();
+		removeDuplicates();
 	}
 	
 	public static void containerWtihWater() {
@@ -37,5 +39,10 @@ public class Tester {
 		Integer arr[] = {1,2,1,4,5,6};
 		
 		fourSum.solver(arr,10);
+	}
+	public static void removeDuplicates() {
+		Integer arr[] = {1,2,2,4,4,5,6};
+		RemoveDuplicates rd = new RemoveDuplicates();
+		rd.solver(arr);
 	}
 }
