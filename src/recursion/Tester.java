@@ -10,6 +10,8 @@ public class Tester {
 		fibonacciSeries();
 		
 		gcd();
+		
+		towerOfHanoi();
 	}
 	
 	static void helloWorld() {
@@ -37,10 +39,17 @@ public class Tester {
 		int numb = fb.fibonacciSeries(10);
 		System.out.println("10th Fibonacci Number is : " +numb);
 	}
+	
 	static void gcd() {
 		GCD gcd = new GCD();
 		System.out.println("GCD of 10 & 20 is : " + gcd.solver(10, 20));
 		System.out.println("GCD of 15 & 20 is : " + gcd.solver(15, 20));
 		
+	}
+	
+	static void towerOfHanoi() {
+		TowerOfHanoi tower = new TowerOfHanoi();
+		char source='A',dest='C',inter = 'B';
+		tower.solver(3,source, dest, inter);
 	}
 }
