@@ -7,7 +7,8 @@ public class Tester {
 		twoSum();
 		
 		containerWtihWater();
-
+		
+		threeSum();
 	}
 	
 	public static void containerWtihWater() {
@@ -21,5 +22,11 @@ public class Tester {
 		Integer target = 55;
 		TwoSum twoSum = new TwoSum();
 		twoSum.solver(arr, target);
+	}
+	public static void threeSum() {
+		Integer arr[] = {1,2,3,4,5,6};
+		Integer target = 13;
+		ThreeSum threeSum = new ThreeSum();
+		threeSum.solver(arr, target);
 	}
 }
