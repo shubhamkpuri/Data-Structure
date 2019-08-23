@@ -9,6 +9,8 @@ public class Tester {
 		containerWtihWater();
 		
 		threeSum();
+		
+		fourSum();
 	}
 	
 	public static void containerWtihWater() {
@@ -24,9 +26,16 @@ public class Tester {
 		twoSum.solver(arr, target);
 	}
 	public static void threeSum() {
-		Integer arr[] = {1,2,3,4,5,6};
-		Integer target = 13;
+		Integer arr[] = {1,5,6,2,3,4};
+		Integer target = 12;
 		ThreeSum threeSum = new ThreeSum();
-		threeSum.solver(arr, target);
+		threeSum.solver(arr , target);
+	}
+	public static void fourSum() {
+
+		FourSum fourSum = new FourSum();
+		Integer arr[] = {1,2,1,4,5,6};
+		
+		fourSum.solver(arr,10);
 	}
 }
