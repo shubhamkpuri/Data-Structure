@@ -6,11 +6,15 @@ public class Tester {
 		
 		twoSum();
 		
-		
+		containerWtihWater();
 
 	}
 	
-
+	public static void containerWtihWater() {
+		Integer arr[] = {1,2,3,4,5,6};
+		ContainerWithWater maxWater = new ContainerWithWater();
+		maxWater.solver(arr);
+	}
 	
 	public static void twoSum() {
 		Integer arr[] = {1,2,3,4,5,6};
