@@ -3,18 +3,21 @@ package array;
 public class Tester {
 
 	public static void main(String[] args) {
+//		
+//		twoSum();
+//		
+//		containerWtihWater();
+//		
+//		threeSum();
+//		
+//		fourSum();
+//		
+//		removeDuplicates();
+//		
+//		removeElements();
 		
-		twoSum();
+		nextPermutation();
 		
-		containerWtihWater();
-		
-		threeSum();
-		
-		fourSum();
-		
-		removeDuplicates();
-		
-		removeElements();
 	}
 	
 	public static void containerWtihWater() {
@@ -51,5 +54,10 @@ public class Tester {
 		Integer arr[] = {1,2,2,4,2,5,6};
 		RemoveElement rd = new RemoveElement();
 		rd.solver(arr,2);
+	}
+	public static void nextPermutation() {
+		Integer arr[] = {1,2,3,6,5};
+		NextPermutation np = new NextPermutation();
+		np.solver(arr);
 	}
 }
